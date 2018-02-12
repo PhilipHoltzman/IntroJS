@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Week2 Lab</title>
+
+</head>
+<body>
+    <body bgcolor="#2f3133">
+    <font size="3" color="#4aefdc" face="Helvetica Neue">
+  <h1>Week 2 Lab: Cheat Sheet</h1>
+  
+  <br>
+  <h3>What are the types of the following pieces of data: "", 0, 1, "0", "1", [], {}, null, undefined, NaN, Infinity, console, console.log, document, document.write, true, false.?</h3>
+
+
+  <script>
+      document.write('data type: "" = ' + typeof("") + "<br>");
+      document.write('data type: 0 = ' + typeof(0) + "<br>");
+      document.write('data type: 1 = ' + typeof(1) + "<br>");
+      document.write('data type: "0" = ' + typeof("0") + "<br>");
+      document.write('data type: "1" = ' + typeof("1") + "<br>");
+      document.write('data type: [] = ' + typeof([]) + "<br>");
+      document.write('data type: {} = ' + typeof({}) + "<br>");
+      document.write('data type: null = ' + typeof(null) + "<br>");
+      document.write('data type: undefined = ' + typeof(undefined) + "<br>");
+      document.write('data type: NaN = ' + typeof(NaN) + "<br>");
+      document.write('data type: Infinity = ' + typeof(Infinity) + "<br>");
+      document.write('data type: console = ' + typeof(console) + "<br>");
+      document.write('data type: console.log = ' + typeof(console.log) + "<br>");
+      document.write('data type: document = ' + typeof(document) + "<br>");
+      document.write('data type: document.write = ' + typeof(document.write) + "<br>");
+      document.write('data type: true = ' + typeof(true) + "<br>");
+      document.write('data type: false = ' + typeof(false) + "<br>");
+  </script>
+
+  
+
+  <br>
+  <h3>For the five elementary arithmetic operations (-, +, *, /, %), when given two strings like "2" and "5", or one string and one number, like "2" and 5 or 2 and "5", what are the results?</h3>
+
+  <script>
+
+    // addition
+    document.write('Addition' + "<br>");
+    document.write('"2" + "5" = ' + ("2" + "5") + "<br>");
+    document.write('"2" + 5 = ' + ("2" + 5) + "<br>");
+    document.write('2 + 5 = ' + (2 + 5) + "<br>" + "<br>");
+
+    //subtraction
+    document.write('Subtraction' + "<br>");
+    document.write('"2" - "5" = ' + ("2" - "5") + "<br>");
+    document.write('"2" - 5 = ' + ("2" - 5) + "<br>");
+    document.write('2 - 5 = ' + (2 - 5) + "<br>" + "<br>");
+    
+    //multiplication
+    document.write('Multiplication' + "<br>");
+    document.write('"2" * "5" = ' + ("2" * "5") + "<br>");
+    document.write('"2" * 5 = ' + ("2" * 5) + "<br>");
+    document.write('2 * 5 = ' + (2 * 5) + "<br>" + "<br>");
+
+    // division
+    document.write('Division' + "<br>");
+    document.write('"2" / "5" = ' + ("2" / "5") + "<br>");
+    document.write('"2" / 5 = ' + ("2" / 5) + "<br>");
+    document.write('2 / 5 = ' + (2 / 5) + "<br>" + "<br>");
+
+    // the other one uhhh, whatever, modulus, yeah... modulus...
+    document.write('Modulus' + "<br>");
+    document.write('"2" % "5" = ' + ("2" % "5") + "<br>");
+    document.write('"2" % 5 = ' + ("2" % 5) + "<br>");
+    document.write('2 % 5 = ' + (2 % 5) + "<br>" + "<br>");
+    
+    
+  </script>
+
+
+  <br>
+  <h3>Is 10 + 5 % 2 the same as (10 + 5) % 2, or 10 + (5 % 2)? How about 10 * 5 % 2?</h3>
+
+  <script>
+    document.write("Not Really.."+ "<br>");
+    document.write('10 + 5 % 2 = ' + (10 + 5 % 2)   + "<br>")
+    document.write('(10 + 5) % 2 = ' + ((10 + 5) % 2) + "<br>")
+    document.write('10 + (5 % 2) = ' + (10 + (5 % 2)) + "<br>")
+    document.write('10 * 5 % 2 = ' + (10 * 5 % 2)   + "<br>")
+
+  </script>
+
+  <br>
+  <h3>Is 0 == 1 ? "fish" : "duck" the same as (0 == 1) ? "fish" : "duck", or 0 == (1 ? "fish" : "duck")?</h3>
+
+  <script>
+
+    document.write("not really.. ");
+    document.write('(0 == 1 ? "fish" : "duck") = ' +  (0 == 1 ? "fish" : "duck") + "<br>");
+    document.write('((0 == 1) ? "fish" : "duck") = ' +  ((0 == 1) ? "fish" : "duck") + "<br>");
+    document.write('(0 == (1 ? "fish" : "duck")) = ' +  (0 == (1 ? "fish" : "duck")) + "<br>");
+    
+  </script>
+
+  <br>
+  <h3>Which of these values are truthy and which are falsy: 0, 1, 2, "0", "1", "2", "cow", "", null, undefined, NaN, Infinity, [], [0], {}, {vegetable: "cabbage"}.</h3>
+
+  <script>
+    
+    if(0){document.write(" '0' is true" + "<br>");}else{document.write(" '0' is false" + "<br>");}
+    if(1){document.write(" 1 is true" + "<br>");}else{document.write(" 1 is false" + "<br>");}
+    if(2){document.write(" 2 is true" + "<br>");}else{document.write(" 2 is false" + "<br>");}
+    if("0"){document.write(" '0' is true" + "<br>");}else{document.write(" '0' is false" + "<br>");}
+    if("1"){document.write(" '1' is true" + "<br>");}else{document.write(" '1' is false" + "<br>");}
+    if("2"){document.write(" '2' is true" + "<br>");}else{document.write(" '2' is false" + "<br>");}
+    if("cow"){document.write(" 'cow' is true" + "<br>");}else{document.write(" 'cow' is false" + "<br>");}
+    if(""){document.write(" '' is true" + "<br>");}else{document.write(" '' is false" + "<br>");}
+    if(null){document.write(" null is true" + "<br>");}else{document.write(" null is false" + "<br>");}
+    if(undefined){document.write(" undefined is true" + "<br>");}else{document.write(" undefined is false" + "<br>");}
+    if(NaN){document.write(" NaN is true" + "<br>");}else{document.write(" NaN is false" + "<br>");}
+    if(Infinity){document.write(" Infinity is true" + "<br>");}else{document.write(" Infinity is false" + "<br>");}
+    if([]){document.write(" [] is true" + "<br>");}else{document.write(" [] is false" + "<br>");}
+    if([0]){document.write(" [0] is true" + "<br>");}else{document.write(" [0] is false" + "<br>");}
+    if({}){document.write(" {} is true" + "<br>");}else{document.write(" {} is false" + "<br>");}
+    if({vegetable: "cabbage"}){document.write(" obj is true" + "<br>");}else{document.write(" obj is false" + "<br>");}
+
+  </script>
+
+  <br>  
+  <h3>What are the return results from the following expressions: "dog" || "cat" || "cow"; "dog" && "cat" && "cow".</h3>
+
+  <script>
+
+    document.write('"dog" || "cat" || "cow"; is ' + ("dog" || "cat" || "cow") + '<br>');
+    document.write('"dog" && "cat" && "cow"; is ' + ("dog" && "cat" && "cow") + '<br>');
+
+  </script>
+
+
+  <br>
+  <h3>Anything else that you think is interesting or difficult to remember.</h3>
+
+  <p>not just yet..</p>
+
+
+<script>
+
+</script>
+
+</body>
+</html>
