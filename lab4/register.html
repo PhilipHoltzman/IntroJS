@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User Login</title>
+
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="/dist/css/bootstrap.css">
+  <script src="/dist/js/bootstrap.js"></script>
+
+  <script src="validateUsername.js"></script>
+  <script src="validatePassword.js"></script>
+  <script src="attemptLogin.js"></script>
+  
+
+  <script>
+    var ADMIN_USERNAME = "admin";
+    var SECRET_PASSWORD = "fidelio";
+    var loginCounter = 0;
+  </script>
+</head>
+<body>
+    
+    <div style="text-align:center">
+      <br><br><br>
+      <h1>Admin Login</h1>
+      <br>
+      <pre>
+ _________________
+|# :           : #|
+|  :           :  |
+|  :           :  |
+|  :           :  |
+|  :___________:  |
+|     _________   |
+|    | __      |  |
+|    ||  |     |  |
+\____||__|_____|__|
+      </pre>
+      <br>
+      <h1>Please sign in for super user privilages</h1>
+      <br>
+      <br>
+  <input type="text" id="userName" oninput="validateUsername();"><br><span id="userNameMessage" style="color:yellow;"></span><br>
+  <br>
+  <input type="text" id="password" oninput="validatePassword();"><br><span id="passwordMessage" style="color:yellow;"></span><br>
+  <br>
+  <br>
+  <p class="btn btn-primary btn-large" onclick="attemptLogin()" >Login!</p>
+</div>
+</div>
+  
+</body>
+</html>
+  
+
